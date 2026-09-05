@@ -1,0 +1,25 @@
+# Copyrighted game content extracted from the owner's own copy — never commit / redistribute
+assets/
+extracted/
+*.win
+*.ogg
+*.wav
+
+# Converted 3DS textures are still copyrighted Undertale art — regenerate them from
+# your own legally-owned copy via the pipeline in tools/scripts/ (see README).
+data/*.t3x
+
+# Large third-party tools — download separately (links in README); not ours to redistribute.
+tools/UTMT_CLI/
+tools/UndertaleModTool/
+
+# Build output
+build/
+*.3dsx
+*.cia
+*.elf
+*.smdh
+*.3dsx.*
+
+# README screenshots live under docs/ and ARE committed (they're captures of our own
+# homebrew running, not redistributed game files).
