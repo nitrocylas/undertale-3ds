@@ -22,7 +22,7 @@ pulled out of my own copy. two screens, actual pixels, running on homebrew hardw
 
 </div>
 
-> ⚠️ **heads up — this is NOWHERE near finished.** its very much a work in progress. right now
+> ⚠️ **heads up, this is NOWHERE near finished.** its very much a work in progress. right now
 > its basically the intro, the menu/naming screen and only the first couple ruins rooms + the
 > flowey encounter. theres no real battle system yet, no save, most of the game just isnt built.
 > dont expect to actually play through undertale on it, atleast not yet.
@@ -38,7 +38,7 @@ big job so im building it in vertical slices, one screen at a time, that way pro
 visible and if one scene breaks it cant take the others down with it.
 
 its a personal use port. none of the extracted game content goes into git (see [legal](#legal)
-below) — the repo is the *engine*, you rebuild the assets from your own copy.
+below) - the repo is the *engine*, you rebuild the assets from your own copy.
 
 ## screenshots
 
@@ -48,13 +48,13 @@ straight off the two 3ds screens.
 |  |  |
 |:--:|:--:|
 | <img src="docs/title.png" width="330" alt="Title and instructions"> | <img src="docs/name-entry.png" width="330" alt="Name the fallen human"> |
-| title + instructions, the `UNDERTALE` intro menu | "name the fallen human" — the whole naming grid |
+| title + instructions, the `UNDERTALE` intro menu | "name the fallen human", the whole naming grid |
 | <img src="docs/overworld.png" width="330" alt="Overworld walking"> | <img src="docs/flowey-ready.png" width="330" alt="Flowey pellets"> |
 | overworld, frisk walks around. menu lives on the touch screen | the trap.. *"Are you ready? Move around!"* |
 | <img src="docs/flowey-love.png" width="330" alt="Flowey LOVE dialogue"> | <img src="docs/flowey-pellets.png" width="330" alt="friendliness pellets"> |
 | talking face dialogue + typewriter | *"...little white 'friendliness pellets.'"* |
 
-## the one big design rule — use BOTH screens
+## the one big design rule, use BOTH screens
 
 the 3ds has two screens so i wanted to actually use them to declutter, not just stack the game on
 one and waste the other. undertale renders at 320x240 native.
@@ -64,7 +64,7 @@ one and waste the other. undertale renders at 320x240 native.
 - **bottom screen (320x240, touch):** all the dialogue boxes, inventory and menus (fight / act /
   item / mercy, save screen etc). its the touch screen so menus end up tappable which is nice.
 
-the intro storyboard is the one exception — the slide art is the "world" (top) and the narration
+the intro storyboard is the one exception, the slide art is the "world" (top) and the narration
 text goes on the bottom.
 
 ## building it
@@ -90,32 +90,32 @@ powershell -File build.ps1
   `%APPDATA%\Azahar\sysdata\dspfirm.cdc`. if its missing audio just no-ops, it wont crash.
 
 ### toolchain versions (checked sep 2026)
-- devkitpro installer — https://github.com/devkitPro/installer/releases
-- azahar emulator — https://github.com/azahar-emu/azahar/releases
-- undertalemodtool (asset extraction) — https://github.com/UnderminersTeam/UndertaleModTool/releases (v0.9.2.0)
+- devkitpro installer - https://github.com/devkitPro/installer/releases
+- azahar emulator - https://github.com/azahar-emu/azahar/releases
+- undertalemodtool (asset extraction) - https://github.com/UnderminersTeam/UndertaleModTool/releases (v0.9.2.0)
 
 ## the asset pipeline
 
 assets get pulled out of your own `data.win`, converted into 3ds textures and embedded, no romfs.
 
-1. `tools/scripts/dump_names.csx` — dumps the resource names (do it once).
+1. `tools/scripts/dump_names.csx` - dumps the resource names (do it once).
 2. targeted export with the UTMT cli (`UndertaleModCli.exe load <data.win> --scripts <script>.csx`).
-3. `tex3ds <png> -o data/<name>.t3x` — turn the png into a 3ds texture, embedded via `bin2o`.
+3. `tex3ds <png> -o data/<name>.t3x` - turn the png into a 3ds texture, embedded via `bin2o`.
 4. build + test.
 
 > heads up: the extraction tools (`tools/UTMT_CLI/`, `tools/UndertaleModTool/`) and the converted
-> textures (`data/*.t3x`) are all **gitignored** — grab the tools from the link up top and regen the
+> textures (`data/*.t3x`) are all **gitignored** - grab the tools from the link up top and regen the
 > textures from your own copy. only the extraction *scripts* (`tools/scripts/`) are in the repo.
 
 ## progress
 
 built as vertical slices, following undertales real boot order.
 
-**slice 1 — intro storyboard** (`room_introstory`)
+**slice 1 - intro storyboard** (`room_introstory`)
 - [x] slide 0 rendering on 3ds from an extracted `t3x` (proved the pipeline works)
 - [x] full slide sequence + typewriter narration + the falling pan, skippable
 
-**slice 2 — main menu** (`room_intromenu` / `scr_namingscreen`)
+**slice 2 - main menu** (`room_intromenu` / `scr_namingscreen`)
 - [x] instructions screen (begin game / settings) with 3ds adapted control labels
 - [x] name entry grid (A-Z / a-z, quit / backspace / done), faithful navigation, 6 char cap
 - [x] confirm (no / yes) + all 27 name easter eggs (sans, asgore, chara ...)
@@ -124,15 +124,15 @@ built as vertical slices, following undertales real boot order.
 - [ ] menu music (`mus_menu0.ogg`) + per area bgm
 - [ ] the real `fnt_main` bitmap font (rn its the 3ds system font as a placeholder)
 
-**slice 3 — ruins overworld** (build the reusable walking engine first, then the rooms)
+**slice 3 - ruins overworld** (build the reusable walking engine first, then the rooms)
 - [x] frisk walks, 4 direction animated
-- [x] `room_area1` — the flower bed landing, follow camera, wake up, integer position filtering
+- [x] `room_area1` - the flower bed landing, follow camera, wake up, integer position filtering
 - [x] pixel accurate collision from a per column walkable band generated off the floor pixels
-- [x] multi room engine — a room = { bg, per column band, size, door list }, doors fade + load
-- [x] flowey cutscene — the rise, full dialogue, talking faces, SOUL heart, pellets, toriels rescue
+- [x] multi room engine - a room = { bg, per column band, size, door list }, doors fade + load
+- [x] flowey cutscene - the rise, full dialogue, talking faces, SOUL heart, pellets, toriels rescue
 - [ ] `room_ruins1` (toriel / leaves) + wiring the next door up
 
-**later on** — the battle system (SOUL bullet board, fight/act/item/mercy), then the rest of the
+**later on** - the battle system (SOUL bullet board, fight/act/item/mercy), then the rest of the
 content pass.
 
 the code is a little scene system: `game.h`/`game.c` core + `scene_intro`, `scene_menu`,
@@ -141,19 +141,19 @@ the code is a little scene system: `game.h`/`game.c` core + `scene_intro`, `scen
 ## legal
 
 undertale is © toby fox. this is a personal use engine reimplementation, its not affiliated with or
-endorsed by toby fox in any way. **no copyrighted game content is shipped in this repo** — the
+endorsed by toby fox in any way. **no copyrighted game content is shipped in this repo** - the
 sprites, audio, rooms and the converted `.t3x` textures are all gitignored and stay local to a build
 made from your own copy. you need to own undertale to build something playable.
 
 ## license
 
 the **engine code in here** (everything under `source/`, `include/`, `tools/scripts/` and the build
-files) is MIT, see [LICENSE](LICENSE). that only covers my original code — it does NOT give you any
+files) is MIT, see [LICENSE](LICENSE). that only covers my original code - it does NOT give you any
 rights to undertales assets, characters, music or story, those all still belong to their owner.
 
 ## combat (the battle box)
 
-- `source/battlebox.c` — the reusable undertale battle box. white bordered arena on the top
+- `source/battlebox.c` - the reusable undertale battle box. white bordered arena on the top
   screen, the red SOUL heart you move around inside it, generic bullets, HP, i-frames and a bit
   of screen shake.
 - floweys intro is what drives it rn: SOUL shows up -> the friendliness pellets orbit -> they
