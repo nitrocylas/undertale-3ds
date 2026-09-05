@@ -161,3 +161,10 @@ rights to undertales assets, characters, music or story, those all still belong 
   buttons (d-pad / A / B / START).
 - packaged up too: APP_TITLE=UNDERTALE, icon.png is the red SOUL. runs off the homebrew launcher
   as a `.3dsx`.
+
+## support
+
+if you like what im doing here and wanna help me keep working on it you can toss me something on
+ko-fi, no pressure though. really appreciate it either way
+
+[![ko-fi](https://img.shields.io/badge/support%20me%20on-ko--fi-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/nitrocylas)
