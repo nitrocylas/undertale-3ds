@@ -68,27 +68,11 @@ cramming everything on one.
 - **bottom screen:** all the talking, menus and inventory. and since its the touch screen you can
   tap the menus which is pretty handy.
 
-## how to run it
+## can i play it
 
-you need the [devkitpro](https://devkitpro.org/) toolchain and your own copy of undertale (thats
-where the sprites come from). then from the repo folder:
-
-```powershell
-powershell -File build.ps1
-```
-
-that spits out `undertale-3ds.3dsx`. from there:
-
-- **on your pc:** grab [azahar](https://github.com/azahar-emu/azahar/releases) (a 3ds emulator) and
-  just drag the `.3dsx` onto it.
-  - if it freezes when it opens (happens alot over remote desktop), open its settings and switch the
-    graphics to **software**, that fixes it.
-  - keys: `START`=M, `A`=A, `B`=S, move=arrow keys.
-- **on a real 3ds:** it has to be a hacked one (luma3ds / cfw), a normal 3ds wont run it. then its
-  just the homebrew launcher like any other `.3dsx`.
-
-> theres also stuff in `tools/` for pulling the sprites out of your own copy of the game. the big
-> tool downloads and the ripped sprites are kept out of the repo, so youll regen those yourself.
+not really yet, so im not gonna post build/install steps for now. theres just not enough here to
+be worth it, youd basically get a demo. once its actually playable ill write up how to build it and
+put it on a real 3ds. for now this is more of a "heres my progress" kinda thing.
 
 ## whats done / whats next
 
