@@ -11,6 +11,7 @@ void floweyFree(void);
 void floweyStart(void);             // begin the cutscene
 bool floweyActive(void);
 bool floweyInCombat(void);          // true once the battle box is up (overworld should hide)
+bool floweyFinished(void);          // true after the scene fully completes (Toriel's cue)
 void floweyUpdate(u32 kDown, u32 kHeld); // advance; clears active when finished
 void floweyDrawTop(float camX, float camY, int topXOffset); // Flowey + SOUL on the arena
 void floweyDrawBottom(void);        // dialogue box + talking face

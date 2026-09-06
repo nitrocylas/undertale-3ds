@@ -37,7 +37,7 @@ CFLAGS  := -g -Wall -O2 -mword-relocations \
            -ffunction-sections \
            $(ARCH)
 
-CFLAGS  += $(INCLUDE) -D__3DS__
+CFLAGS  += $(INCLUDE) -D__3DS__ -DDEBUG_BOOT_FLOWEY
 
 CXXFLAGS := $(CFLAGS) -fno-rtti -fno-exceptions -std=gnu++11
 
@@ -120,6 +120,11 @@ $(OFILES_SOURCES) : $(HFILES)
 
 # Embed prebuilt 3DS textures (data/*.t3x) directly into the binary via bin2o.
 %.t3x.o %_t3x.h : %.t3x
+	@echo $(notdir $<)
+	@$(bin2o)
+
+# Embed WAV sound effects (data/*.wav) via bin2o; played as raw PCM.
+%.wav.o %_wav.h : %.wav
 	@echo $(notdir $<)
 	@$(bin2o)
 

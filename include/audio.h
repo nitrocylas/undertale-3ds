@@ -9,3 +9,6 @@ void audioInit(void);
 void audioExit(void);
 void audioPlayOgg(const void* data, int size, bool loop);
 void audioStop(void);
+
+// Play a PCM16 WAV blob as a one-shot sound effect (on a separate channel from the BGM).
+void audioPlayWav(const void* data, int size);

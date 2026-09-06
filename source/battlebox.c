@@ -5,12 +5,14 @@
 #include <stdio.h>
 
 #include "heart_t3x.h"
+#include "pellet_t3x.h"
 
 #define SOUL_SPEED 2.0f
 #define IFRAMES    30      // invincibility after a hit (matches global.invc = 30)
 
-static C2D_SpriteSheet s_heartSheet;
-static C2D_Image s_heart;
+static C2D_SpriteSheet s_heartSheet, s_pelletSheet;
+static C2D_Image s_heart, s_pellet;
+static float s_spin; // shared pellet spin angle
 
 static float s_bx, s_by, s_bw, s_bh; // box rect
 static float s_sx, s_sy;             // SOUL top-left
@@ -25,8 +27,14 @@ void battleLoad(void) {
     s_heartSheet = C2D_SpriteSheetLoadFromMem(heart_t3x, heart_t3x_size);
     s_heart = C2D_SpriteSheetGetImage(s_heartSheet, 0);
     setNearest(s_heart);
+    s_pelletSheet = C2D_SpriteSheetLoadFromMem(pellet_t3x, pellet_t3x_size);
+    s_pellet = C2D_SpriteSheetGetImage(s_pelletSheet, 0);
+    setNearest(s_pellet);
 }
-void battleFree(void) { if (s_heartSheet) C2D_SpriteSheetFree(s_heartSheet); }
+void battleFree(void) {
+    if (s_heartSheet) C2D_SpriteSheetFree(s_heartSheet);
+    if (s_pelletSheet) C2D_SpriteSheetFree(s_pelletSheet);
+}
 
 void battleSetBox(float x, float y, float w, float h) {
     s_bx = x; s_by = y; s_bw = w; s_bh = h;
@@ -104,11 +112,15 @@ void battleDrawSoul(void) {
 
 void battleDrawBullets(void) {
     float sx = battleShakeX(), sy = battleShakeY();
+    s_spin += 0.18f; // friendliness pellets spin
+    // The 12x12 pellet sprite, drawn centered and rotated about its middle.
+    const float half = 6.0f;
     for (int i = 0; i < MAX_BULLETS; i++) {
         if (!s_bullets[i].active) continue;
-        float r = s_bullets[i].r;
-        C2D_DrawRectSolid(floorf(s_bullets[i].x - r + sx), floorf(s_bullets[i].y - r + sy),
-                          0.4f, r * 2, r * 2, COL_WHITE);
+        float scale = (s_bullets[i].r * 2.0f) / 12.0f; // fit sprite to the bullet radius
+        C2D_DrawImageAtRotated(s_pellet, s_bullets[i].x + sx, s_bullets[i].y + sy,
+                               0.4f, s_spin, NULL, scale, scale);
+        (void)half;
     }
 }
 
