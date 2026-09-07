@@ -91,10 +91,11 @@ put it on a real 3ds. for now this is more of a "heres my progress" kinda thing.
 - [x] a basic battle box (the little arena where you dodge stuff)
 
 **not yet:**
+- [ ] sound, theres no audio in it at all right now. not a big deal yet, ill get to it later
 - [ ] the rest of the ruins + actual npcs (toriel is the only one in right now)
 - [ ] a real battle system (fight / act / item / mercy)
 - [ ] saving
-- [ ] music in more places, and the real undertale font (using a placeholder for now)
+- [ ] music, and the real undertale font (using a placeholder for now)
 
 ## legal
 
