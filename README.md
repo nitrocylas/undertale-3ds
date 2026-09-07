@@ -12,16 +12,22 @@ on homebrew.
 
 <br>
 
-<img src="docs/flowey.png" width="360" alt="Flowey running on 3DS">
+<img src="docs/running-on-3ds.png" width="560" alt="Undertale port running on a real 3DS">
 
-*flowey, on hardware. the world is up top, the talking happens on the bottom screen*
+**its running on a real 3ds!!**  thats my actual console, not an emulator. and it runs super
+smooth too, no lag at all which im really happy about.
+
+*(the whole ruins area is basically in now, minus the enemies)*
 
 </div>
 
 > ⚠️ **this is nowhere near finished.** its a hobby project and still really early. right now you
-> got the intro, the menu, a chunk of the ruins and the flowey + toriel bit. no battle system past
-> flowey, no saving, and toriel is the only character in so far. so ya, dont expect to play the
-> whole game yet.
+> got the intro, the menu, almost the whole ruins area and the flowey + toriel bit. no battle
+> system past flowey, no saving, and toriel is the only character in so far. so ya, dont expect to
+> play the whole game yet.
+>
+> also since it runs this smooth i might even try doing a normal ds port too at some point, not just
+> the 3ds one. no promises but it could be possible.
 
 ---
 
