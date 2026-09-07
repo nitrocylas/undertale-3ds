@@ -37,6 +37,12 @@ you cant just turn the PC copy of undertale into a 3ds game, theres no button fo
 was made in gamemaker and the 3ds cant run gamemaker stuff. so instead im just rebuilding the game
 myself in C and feeding it the real sprites and sound from my own copy.
 
+so to be clear this is a **native port**, its all redone from the ground up and NOT running through
+some emulator. thats why it runs so smooth, most likely a full 60 fps on a normal 3ds. i cant say
+that for 100% sure yet though, once i get some of the bigger fights in like sans or asriel with
+their crazy amount of bullets flying around, we'll see how much that hits the framerate. but so far
+its buttery.
+
 im doing it one screen at a time so theres always something working to look at, and if one part
 breaks it doesnt take everything else down with it.
 
@@ -96,6 +102,18 @@ put it on a real 3ds. for now this is more of a "heres my progress" kinda thing.
 - [ ] a real battle system (fight / act / item / mercy)
 - [ ] saving
 - [ ] music, and the real undertale font (using a placeholder for now)
+
+## 3ds exclusive stuff (the fun part)
+
+since im redoing the whole thing anyway im not just gonna do a straight copy, i wanna add some stuff
+thats only in this 3ds version. rough ideas so far:
+
+- a whole new **boss** that isnt in the original
+- some new **mechanics** that use the two screens / touch screen
+- MAYBE a new npc or two if it fits
+- other little extras, we'll see what i come up with
+
+nothing set in stone yet but thats the plan, make it its own thing a bit not just a port.
 
 ## legal
 
