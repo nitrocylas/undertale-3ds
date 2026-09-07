@@ -88,6 +88,8 @@ put it on a real 3ds. for now this is more of a "heres my progress" kinda thing.
 
 ## whats done / whats next
 
+(theres also a [changelog](CHANGELOG.md) if you wanna see everything ive added over time)
+
 **working:**
 - [x] the intro story slides
 - [x] title screen + the full naming screen (with all the name easter eggs like sans, asgore...)
