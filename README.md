@@ -62,6 +62,13 @@ all real, straight off the two 3ds screens (running in the azahar emulator).
 | <img src="docs/ruins-sign.png" width="230" alt="Ruins sign"> | <img src="docs/toriel-rescue.png" width="230" alt="Toriel"> | <img src="docs/overworld.png" width="230" alt="Overworld"> |
 | reading a sign | **toriel shows up!** | walking around |
 
+**newer stuff (end of the ruins + a peek at snowdin)**
+
+|  |  |  |
+|:--:|:--:|:--:|
+| <img src="docs/napstablook.png" width="230" alt="Napstablook"> | <img src="docs/home.png" width="230" alt="Toriel's home"> | <img src="docs/sans-papyrus.png" width="230" alt="Sans and Papyrus"> |
+| napstablook + the dapper blook | toriels home | **sans and papyrus** in the snow :) |
+
 **the start of the game**
 
 |  |  |
