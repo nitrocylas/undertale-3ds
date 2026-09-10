@@ -69,6 +69,8 @@ all real, straight off the two 3ds screens (running in the azahar emulator).
 | <img src="docs/napstablook.png" width="230" alt="Napstablook"> | <img src="docs/home.png" width="230" alt="Toriel's home"> | <img src="docs/sans-papyrus.png" width="230" alt="Sans and Papyrus"> |
 | napstablook + the dapper blook | toriels home | **sans and papyrus** in the snow :) |
 
+<p align="center"><img src="docs/mirror.png" width="230" alt="the mirror, its you"><br><em>the mirror in toriels house.. "its you!"</em></p>
+
 **the start of the game**
 
 |  |  |
