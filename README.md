@@ -17,7 +17,7 @@ on homebrew.
 **its running on a real 3ds!!**  thats my actual console, not an emulator. and it runs super
 smooth too, no lag at all which im really happy about.
 
-*(the whole ruins area is basically in now, minus the enemies)*
+*(the whole ruins area is complete except toriels boss fight snowdins mostly ported in now as well)*
 
 </div>
 
