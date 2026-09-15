@@ -5,6 +5,14 @@ working. this is a hobby project so its not on any real schedule, i just add stu
 
 ## sep 2026
 
+**~30-35% of the whole game now + snowdin**
+- passed a big milestone, were roughly 30-35% through the full game :D
+- snowdin is getting ported in, the snowy forest, the sentry stations, all that.
+- sans and papyrus are in and showing up now (papyrus: "I WILL CAPTURE A HUMAN!").
+- napstablook + his whole fight are done, toriels home and the mirror bit too.
+- added a 3ds only thing, you can pick your own bottom screen wallpaper in the settings
+  (flowerbed, sans, the city, etc).
+
 **running on real hardware**
 - it boots and runs on an actual 3ds now, not just the emulator!! and it runs super smooth, looks
   like a full 60 fps. really happy with how well it holds up.

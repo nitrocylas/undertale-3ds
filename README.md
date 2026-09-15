@@ -7,6 +7,7 @@ on homebrew.
 
 ![Platform](https://img.shields.io/badge/platform-Nintendo%203DS-C0392B)
 ![Language](https://img.shields.io/badge/made%20in-C-555555)
+![Progress](https://img.shields.io/badge/progress-~30--35%25%20of%20the%20game-4C9A2A)
 ![Status](https://img.shields.io/badge/status-work%20in%20progress-E67E22)
 ![License](https://img.shields.io/badge/license-MIT%20(my%20code)-27AE60)
 
@@ -21,10 +22,10 @@ smooth too, no lag at all which im really happy about.
 
 </div>
 
-> ⚠️ **this is nowhere near finished.** its a hobby project and still really early. right now you
-> got the intro, the menu, almost the whole ruins area and the flowey + toriel bit. no battle
-> system past flowey, no saving, and toriel is the only character in so far. so ya, dont expect to
-> play the whole game yet.
+> ⚠️ **still a work in progress, but movin!** were about **30-35% through the whole game** now. the
+> ruins is basically done and snowdin is getting ported in, sans and papyrus are showing up and all
+> that. still no saving and the battle systems not fully there yet, so its not the full game you can
+> sit down and beat, but theres alot to look at now.
 >
 > also since it runs this smooth i might even try doing a normal ds port too at some point, not just
 > the 3ds one. no promises but it could be possible.
@@ -71,6 +72,20 @@ all real, straight off the two 3ds screens (running in the azahar emulator).
 
 <p align="center"><img src="docs/mirror.png" width="230" alt="the mirror, its you"><br><em>the mirror in toriels house.. "its you!"</em></p>
 
+**snowdin + newer stuff (~30-35% of the game now!)**
+
+|  |  |
+|:--:|:--:|
+| <img src="docs/snowdin-area.png" width="250" alt="Snowdin"> | <img src="docs/papyrus-capture.png" width="250" alt="Papyrus"> |
+| gettin into snowdin | papyrus: *"I WILL CAPTURE A HUMAN!"* |
+
+and a lil 3ds only thing i added, you can change your **bottom screen wallpaper** in the settings :)
+
+|  |  |
+|:--:|:--:|
+| <img src="docs/wallpaper-flowerbed.png" width="200" alt="Flowerbed wallpaper"> | <img src="docs/wallpaper-sans.png" width="200" alt="Sans wallpaper"> |
+| the flowerbed one | ...or just sans chillin lol |
+
 **the start of the game**
 
 |  |  |
@@ -103,28 +118,34 @@ put it on a real 3ds. for now this is more of a "heres my progress" kinda thing.
 - [x] the intro story slides
 - [x] title screen + the full naming screen (with all the name easter eggs like sans, asgore...)
 - [x] walking around, animated, with proper collision so you dont walk through walls
-- [x] a bunch of the ruins rooms hooked together with doors
-- [x] the whole flowey intro (the friendliness pellets trap) and toriel saving you
-- [x] a basic battle box (the little arena where you dodge stuff)
+- [x] basically the whole ruins, rooms hooked together with doors
+- [x] the flowey intro (the friendliness pellets trap), toriel, napstablook + his fight
+- [x] snowdin getting ported in now, sans and papyrus showing up
+- [x] a battle box (the little arena where you dodge stuff)
+- [x] pick your own **bottom screen wallpaper** in the settings (3ds only lil extra)
 
 **not yet:**
 - [ ] sound, theres no audio in it at all right now. not a big deal yet, ill get to it later
-- [ ] the rest of the ruins + actual npcs (toriel is the only one in right now)
-- [ ] a real battle system (fight / act / item / mercy)
+- [ ] the rest of snowdin + the areas after it
+- [ ] a full battle system (fight / act / item / mercy all the way)
 - [ ] saving
 - [ ] music, and the real undertale font (using a placeholder for now)
 
 ## 3ds exclusive stuff (the fun part)
 
 since im redoing the whole thing anyway im not just gonna do a straight copy, i wanna add some stuff
-thats only in this 3ds version. rough ideas so far:
+thats only in this 3ds version.
 
+already in:
+- [x] custom **bottom screen wallpapers** you can switch in the settings (flowerbed, sans, the city...)
+
+still just ideas:
 - a whole new **boss** that isnt in the original
 - some new **mechanics** that use the two screens / touch screen
 - MAYBE a new npc or two if it fits
 - other little extras, we'll see what i come up with
 
-nothing set in stone yet but thats the plan, make it its own thing a bit not just a port.
+nothing else set in stone yet but thats the plan, make it its own thing a bit not just a port.
 
 ## legal
 
