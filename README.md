@@ -157,10 +157,3 @@ undertale yourself to actually build a playable version.
 
 my code in here is MIT (see [LICENSE](LICENSE)). that only covers the code i wrote, it does NOT give
 you any rights to undertale itself, thats all toby fox's.
-
-## support
-
-if you like this and wanna help me keep working on it you can toss me a couple bucks on ko-fi, no
-pressure at all. thanks either way :)
-
-[![ko-fi](https://img.shields.io/badge/buy%20me%20a%20coffee-ko--fi-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/nitrocylas)
